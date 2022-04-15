@@ -1,0 +1,66 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>View All Patients</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+<!-- <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <title>Ionic Template</title>
+
+  <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+  <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+</head>
+
+<body ng-controller="MyCtrl as ctrl">
+  <ion-header-bar class="bar-stable">
+      <h1 class="title">Service Provider Details</h1>
+  </ion-header-bar>
+  <ion-content>
+      <div class="row header">
+        <div class="col">Utility Company Name</div>
+        <div class="col">Service Code</div>
+        <div class="col">Pay Limit</div>
+        <div class="col">Account Number to Use</div>
+        <div class="col"></div>
+      </div>
+      <div class="row" ng-repeat="data in ctrl.data">
+        <div class="col">First Name</div>
+        <div class="col">Last Name</div>
+        <div class="col">D.0.B</div>
+        <div class="col">Department</div>
+        <div class="col"><button class="button" ng-click="ctrl.add($index)">Add</button></div>
+      </div>
+  </ion-content>
+</body>
+
+</html>
+ -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>View All Patients</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <!-- Theme classes dark, material, bootstrap -->
+    <ngx-datatable 
+      class="material"
+      [limit]="8" 
+      [rows]="rows" 
+      [rowHeight]="50" 
+      [columns]="columns"
+      [columnMode]="'force'" 
+      [sortType]="'multi'" 
+      [headerHeight]="50" 
+      [footerHeight]="50">
+    </ngx-datatable>
+  </div>
+</ion-content>

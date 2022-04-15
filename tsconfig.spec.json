@@ -3,8 +3,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
+    "module": "commonjs",
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "types": [
-      "jasmine"
+      "jasmine",
+      "jest"
     ]
   },
   "files": [

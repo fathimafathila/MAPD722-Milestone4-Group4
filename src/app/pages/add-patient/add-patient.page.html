@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Patient</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content padding>  
+  <form (ngSubmit)="bikeCreate()">
+    <ion-item></ion-item>
+   <ion-label class = "label">First Name:</ion-label>
+   <ion-input type="text" [(ngModel)]="bike.name" name="firstname"></ion-input>
+ </ion-item> -->
+ <ion-content>
+
+  <ion-item>
+    <ion-label class = "label">First Name:</ion-label>
+    <ion-input
+    class = "input-values" required type="text"  [(ngModel)]="patient.firstname"
+    ></ion-input>
+  </ion-item>
+
+ <ion-item>
+   <ion-label class = "label">Last Name:</ion-label>
+   <ion-input
+   class = "input-values" required type="text" [(ngModel)]="patient.lastname"
+   ></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label class = "label">D.O.B:</ion-label>
+  <ion-input
+  class = "input-values"
+  type="Date" [(ngModel)]="patient.dob"
+  ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Department: </ion-label>
+  <ion-input
+  class = "input-values" required type="text" [(ngModel)]="patient.department"
+  ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Doctor: </ion-label>
+  <ion-input
+  class = "input-values" required type="text" [(ngModel)]="patient.doctor"
+  ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Contact Number: </ion-label>
+  <ion-input
+  class = "input-values" required type="number" [(ngModel)]="patient.contactnumber"
+  ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Address</ion-label>
+  <ion-input
+  class = "input-values" required type="text" [(ngModel)]="patient.address"
+  ></ion-input>
+</ion-item>
+
+
+  
+ <ion-button routerLink="/home" (click)="saveTodo()" class = "btn-filled" expand="block">Add Patient</ion-button>
+
+</ion-content>
+
+
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+ 
+<!-- <ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="text" placeholder="Task" [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="number" placeholder="Priority" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+</ion-content> -->
+

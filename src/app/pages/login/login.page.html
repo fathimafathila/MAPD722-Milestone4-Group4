@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "flex">
+
+   <!-- input -->
+   <ion-item>
+    <ion-label class = "label">Username:</ion-label>
+    <ion-input
+    class = "input-values"
+      type="username"
+      id="input-username"
+      [(ngModel)]="username"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class = "label">Password: </ion-label>
+    <ion-input
+    class = "input-values"
+      type="Password"
+      id="input-password"
+      [(ngModel)]="password"
+    ></ion-input>
+  </ion-item>
+   
+  <ion-button routerLink="/add-patient"  class = "btn-filled" expand="block">Login</ion-button>
+
+  <div class = "flex">
+
+  <ion-button routerLink="/add-patient" fill="clear" class = "btn-plain" expand="block">Forgot Password?</ion-button>
+
+  <ion-button routerLink="/add-patient" class = "btn-plain" fill="clear" expand="block">Click to register</ion-button>
+
+</div>
+</ion-content>
+

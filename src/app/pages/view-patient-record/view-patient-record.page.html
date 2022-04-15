@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>View Patient Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- input -->
+  <ion-item>
+    <ion-label class = "label">First Name:</ion-label>
+    <ion-input
+    class = "input-values" required type="text"  [(ngModel)]="patientrecords.firstname"
+    ></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label class = "label">Last Name </ion-label>
+    <ion-input
+    class = "input-values" required type="text"  [(ngModel)]="patientrecords.lastname"
+    ></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+   <ion-label class = "label">Date: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.date"
+     type="Date"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Nurse Name: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.nursename"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Type: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.type"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Blood Pressure: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.bloodpressure"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Respiratory Rate: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.respiratoryrate"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Blood Oxygen Level: </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.bloodoxygenlevel"
+   ></ion-input>
+ </ion-item>
+ 
+ <ion-item>
+   <ion-label class = "label">Heart Beat Rate : </ion-label>
+   <ion-input
+   class = "input-values" required type="text"  [(ngModel)]="patientrecords.heartbeatrate"
+   ></ion-input>
+ </ion-item>
+   
+  <ion-button routerLink="/add-patient-record" (click)="savePatientrecords()" class = "btn-filled" expand="block">Add Record</ion-button>
+ 
+ </ion-content>
+ 
